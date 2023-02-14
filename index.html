@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css stylesheet link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwesome link -->
+    <script src="https://kit.fontawesome.com/5cfefd5de9.js" crossorigin="anonymous"></script>
+
+    <!-- style link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-sky-100">
+    <main>
+        <section class="w-3/4 mx-auto bg-sky-300 mt-10 rounded-md shadow-lg shadow-stone-400 p-5">
+            <h1 class="text-2xl text-center font-mono font-semibold mb-5">My Text Editor</h1>
+            <div class="bg-sky-200 border-2 border-gray-700 p-3 w-3/4 mx-auto rounded-md">
+                <!-- text customize part -->
+                <div class="grid grid-cols-3 gap-5 border-b-2 border-gray-700 px-1 pb-4">
+                    <div >
+                        <button id="bold" class="pr-5"><i class="fa-solid fa-bold"></i></button>
+                        <button id="italic" class="pr-5"><i class="fa-solid fa-italic"></i></button>
+                        <button id="underline" class="pr-5"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <div class="mx-auto">
+                        <button id="left" class="pr-5"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="center" class="pr-5"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="right" class="pr-5"><i class="fa-solid fa-align-right"></i></button>
+                        <button id="justify" class="pr-5"><i class="fa-solid fa-align-justify"></i></button>
+                    </div>
+                    <div class="mx-auto">
+                        <input type="number" value="17" id="font-size" class="w-9 mr-2 bg-transparent">
+                        <button id="uppercase" class="mr-5"><i class="fa-solid fa-a"></i></button>
+                        <input type="color"  id="color" class="p-1">
+                    
+                    </div>
+            </div>
+
+            <!-- text Area part -->
+            <div class="mt-2">
+                <textarea id="text-area" class="border-2 border-gray-700 rounded-md p-1 w-full h-3/4 font-mono" cols="70" rows="10" placeholder="Start Writing Here ......"></textarea>
+            </div>
+            </div>
+        </section>
+    </main>
+        <!-- script files -->
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
